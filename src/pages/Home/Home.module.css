@@ -1,0 +1,93 @@
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 280px 1fr; 
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh; 
+    background-color: #121212;
+    color: white;
+}
+
+
+.sidebar {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    height: 50vh;
+    overflow-y: auto;
+}
+
+
+
+.game_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px;
+    padding: 20px;
+}
+
+
+
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Responsive Tablet */
+@media (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr; /* Sidebar sopra, contenuto sotto */
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .game_wrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonne */
+    }
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    .main {
+        grid-template-columns: 1fr; /* Sidebar sopra */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .game_wrapper {
+        grid-template-columns: 1fr; /* Singola colonna */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
