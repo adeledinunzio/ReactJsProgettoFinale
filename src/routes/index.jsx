@@ -8,6 +8,8 @@ import {
   import Genre from "../pages/Genre";
   import Game from "../pages/Game";
   import Platform from "../pages/Platform";
+  import SignUp from "../pages/SignUp";
+  import SignIn from "../pages/SignIn";
   
   
   const router = createBrowserRouter(
@@ -17,6 +19,8 @@ import {
         <Route path="/games/:genre" element={<Genre/>}/>
         <Route path="/games/:id/:game" element={<Game/>}/>
         <Route path="/platforms/:platform" element={<Platform />} />
+        <Route path="/register" element={<SignUp/>} />
+        <Route path="/login" element={<SignIn/>} />
         
         
       
