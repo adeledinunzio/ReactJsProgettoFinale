@@ -48,6 +48,7 @@ export default function SignUp() {
             placeholder="first_name"
             aria-label="first_name"
             autoComplete="first_name"
+            required
             
           />
           <input
@@ -56,6 +57,7 @@ export default function SignUp() {
             placeholder="last_name"
             aria-label="last_name"
             autoComplete="last_name"
+            required
             
           />
           <input
@@ -64,6 +66,7 @@ export default function SignUp() {
             placeholder="Username"
             aria-label="Username"
             autoComplete="Username"
+            required
             
           />
           <input
@@ -72,6 +75,7 @@ export default function SignUp() {
             placeholder="Email"
             aria-label="Email"
             autoComplete="Email"
+            required
             
           />
           <input
@@ -80,6 +84,7 @@ export default function SignUp() {
             placeholder="Password"
             aria-label="Password"
             autoComplete="current-password"
+            required
             
           />
           <fieldset>

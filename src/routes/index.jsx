@@ -10,6 +10,11 @@ import {
   import Platform from "../pages/Platform";
   import SignUp from "../pages/SignUp";
   import SignIn from "../pages/SignIn";
+  import Account from "../pages/Account";
+  import ProtectedRoute from "../components/ProtectedRoute";
+  import Search from "../pages/Search";
+  
+ 
   
   
   const router = createBrowserRouter(
@@ -19,8 +24,15 @@ import {
         <Route path="/games/:genre" element={<Genre/>}/>
         <Route path="/games/:id/:game" element={<Game/>}/>
         <Route path="/platforms/:platform" element={<Platform />} />
+        <Route path="/search" element={<Search/>}/>
         <Route path="/register" element={<SignUp/>} />
         <Route path="/login" element={<SignIn/>} />
+        
+        
+
+        <Route element={<ProtectedRoute />}>
+                <Route path="/account" element={<Account />} />
+            </Route>
         
         
       

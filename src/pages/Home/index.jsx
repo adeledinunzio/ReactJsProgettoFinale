@@ -1,7 +1,11 @@
+
 import { useState, useEffect, useRef } from "react";
 import styles from "./Home.module.css";
 import GameCard from "../../components/GameCard";
 import Sidebar from "../../components/Sidebar";
+import SearchGame from "./components/SearchGame";
+
+
 
 export default function Home() {
     const [page, setPage] = useState(1);
@@ -55,7 +59,8 @@ export default function Home() {
                 <div className={styles.heading}>
                     <h1>New and Trending</h1>
                     <p>Based on player counts and release date</p>
-                    <input type="search" name="search" placeholder="Search" aria-label="Search" />
+                <SearchGame/>
+                
                 </div>
 
                 {error && <p className={styles.error}>Errore: {error}</p>}
@@ -76,3 +81,5 @@ export default function Home() {
         </div>
     );
 }
+    
+ 
