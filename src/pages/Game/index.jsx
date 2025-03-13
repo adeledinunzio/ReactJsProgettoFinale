@@ -5,13 +5,14 @@ import supabase from "../../supabase/client";
 import { Toaster, toast } from "sonner"; 
 import styles from "./Game.module.css";
 
+
 export default function Game() {
     const { session } = useContext(SessionContext);
     const { id } = useParams();
     const [game, setGame] = useState({});
     const [favorite, setFavorite] = useState(false);
 
-    // Funzione per aggiungere ai preferiti
+    // aggiunge ai preferiti
     const addFav = async (game) => {
         if (!session) {
             toast.error("You must be logged in!");
@@ -35,7 +36,7 @@ export default function Game() {
         }
     };
 
-    // Funzione per rimuovere dai preferiti
+    // rimuove dai preferiti
     const deleteFav = async (game) => {
         if (!session) {
             toast.error("You must be logged in!");
@@ -57,7 +58,7 @@ export default function Game() {
         }
     };
 
-    // Funzione per leggere i preferiti
+    // legge i preferiti
     const readFav = async () => {
         if (!session) return; // Se non c'è sessione, non fare nulla
 
@@ -113,8 +114,12 @@ export default function Game() {
                     </>
                 )}
             </div>
+            
 
             <Toaster position="bottom-center" />
+            
+            
+           
         </div>
     );
 }

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import { Toaster } from "sonner";
+import Favorites from './Favorites';  // Assicurati di avere il percorso corretto
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -50,14 +52,12 @@ export default function BasicTabs() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-        Profile account
+        
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-        Favorites
+        <Favorites />  
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={2}>
-        Reviews
-      </CustomTabPanel>
+      
     </Box>
   );
 }

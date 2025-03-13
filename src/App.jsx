@@ -2,6 +2,7 @@
 import { RouterProvider } from "react-router";
 import router from "./routes";
 import SessionContextProvider from "./context/SessionContextProvider"; 
+import FavoriteContextProvider from "./context/FavoriteContextProvider";
 
 function App() {
   return <RouterProvider router={router} />;
@@ -10,7 +11,10 @@ function App() {
 function Root() {
   return (
     <SessionContextProvider> 
-      <App />
+      <FavoriteContextProvider>
+        <App />
+      </FavoriteContextProvider>
+      
     </SessionContextProvider>
   );
 }

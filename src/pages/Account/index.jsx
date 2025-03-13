@@ -6,7 +6,7 @@ export default function Account(){
     return(
 
         <div className="container">
-             <h1>account autenticato</h1>
+             <h1></h1>
              <BasicTabs/>
         </div>
         

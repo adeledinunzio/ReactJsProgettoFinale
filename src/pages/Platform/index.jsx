@@ -79,7 +79,7 @@ const Platform = () => {
             <div>
                 <div className={styles.heading}>
                     <h1>Games for {platform}</h1>
-                    <p>Based on player counts and release date</p>
+                    
                     <input
                         type="search"
                         name="search"

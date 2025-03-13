@@ -24,7 +24,7 @@ export default function Genre(){
 
         }
         fetchGenre();
-    },[])
+    },[genre]);
 
 
 
@@ -35,8 +35,8 @@ export default function Genre(){
             
             <div>
                 <div className={styles.heading}>
-                    <h1>{genre} Games</h1>
-                    <p>Based on player counts and release date</p>
+                    <h1> Games{genre}</h1>
+                    
                        <input
                          type="search"
                          name="search"
