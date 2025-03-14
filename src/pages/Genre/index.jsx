@@ -35,7 +35,7 @@ export default function Genre(){
             
             <div>
                 <div className={styles.heading}>
-                    <h1> Games{genre}</h1>
+                    <h1> Games {genre}</h1>
                     
                        <input
                          type="search"
