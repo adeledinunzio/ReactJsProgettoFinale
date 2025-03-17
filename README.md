@@ -29,7 +29,7 @@ Gestire una lista di giochi preferiti,
 Chattare con altri utenti nella chat in tempo reale.
 # CONTEXT 
 SESSION CONTEXT - Gestisce lo stato di autenticazione dell'utente.
-FAVORITE CONTEXT - Gestisce la lista degli anime preferiti dell'utente.
+FAVORITE CONTEXT - Gestisce la lista dei giochi preferiti dell'utente.
 # DEPLOYMENT
 
 
