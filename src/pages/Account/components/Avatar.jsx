@@ -65,10 +65,7 @@ export default function Avatar({ url, size, onUpload }) {
       <div style={{ width: size }}>
     
         <input
-          style={{
-            
-           
-          }}
+         
           type="file"
           id="single"
           accept="image/*"

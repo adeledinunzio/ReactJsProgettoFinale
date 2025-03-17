@@ -95,12 +95,12 @@ export default function Header() {
                                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                                     <Avatar
                                         alt="User Avatar"
-                                        src={avatar_url 
-                                            ? `https://idtaypunngilnmigargo.supabase.co/storage/v1/object/public/avatars/${avatar_url}` 
-                                            : "/default-avatar.png"} 
+                                        src={`https://xmzykxgsqngraorxlzmb.supabase.co/storage/v1/object/public/avatars/${avatar_url}`}
+                                             
                                     />
                                 </IconButton>
                             </Tooltip>
+                            
                             <Typography
                                 sx={{ textAlign: "center", p: 0, cursor: "pointer" }}
                                 onClick={handleOpenUserMenu}

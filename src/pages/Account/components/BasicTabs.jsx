@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
-import { Toaster } from "sonner";
+
 import Favorites from './Favorites';  
 import ProfileAccount from "./ProfileAccount";
 

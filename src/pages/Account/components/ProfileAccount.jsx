@@ -73,18 +73,18 @@ export default function ProfileAccount() {
   return (
     <form onSubmit={updateProfile} className="form-widget">
          <Avatar
-      url={avatar_url}
-      size={140}
-      onUpload={(event, url) => {
-        updateProfile(event, url)
-      }}
-    />
+            url={avatar_url}
+            size={140}
+            onUpload={(event, url) => {
+            updateProfile(event, url)
+            }}
+          />
       <div>
         <label htmlFor="email">Email</label>
         <input id="email" type="text" value={session.user.email} disabled />
       </div>
       <div>
-        <label htmlFor="username">Name</label>
+        <label htmlFor="username">Username</label>
         <input
           id="username"
           type="text"
