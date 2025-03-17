@@ -24,7 +24,7 @@ const Favorites = () => {
           favorites.map((favorite) => (
             <div key={favorite.game_id}>
               <p>{favorite.game_name}</p>
-              <button onClick={() => removeFavorite(favorite.game_id)}>Remove</button>
+              <button onClick={() => removeFavorite(favorite.game_id)} className={styles.buttonRemove}>Remove</button>
             </div>
           ))
         )}

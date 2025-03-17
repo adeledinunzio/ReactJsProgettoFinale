@@ -1,0 +1,24 @@
+.container{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #181717;
+}
+
+.buttonRemove {
+    width: 70%;
+    padding: 10px;
+    background-color: #ffe600;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.buttonRemove:hover {
+    background-color: #0056b3;
+  }

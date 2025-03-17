@@ -2,6 +2,8 @@ import { useState, useEffect, useContext } from 'react';
 import supabase from "../../../supabase/client";
 import SessionContext from "../../../context/SessionContext";
 import Avatar from './Avatar';
+import styles from './ProfileAccount.module.css';
+
 
 export default function ProfileAccount() {
     const { session } = useContext(SessionContext);
@@ -71,7 +73,7 @@ export default function ProfileAccount() {
   }
 
   return (
-    <form onSubmit={updateProfile} className="form-widget">
+    <form onSubmit={updateProfile} className={styles.formWidget}>
          <Avatar
             url={avatar_url}
             size={140}
@@ -119,11 +121,7 @@ export default function ProfileAccount() {
         </button>
       </div>
 
-      <div>
-        <button className="button block" type="button" onClick={() => supabase.auth.signOut()}>
-          Sign Out
-        </button>
-      </div>
+     
     </form>
   )
 }
