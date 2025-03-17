@@ -37,6 +37,8 @@ export default function Header() {
         };
     }, []);
 
+    
+
     useEffect(() => {
         const fetchUserProfile = async () => {
             if (session) {

@@ -4,6 +4,7 @@ import SessionContext from "../../context/SessionContext";
 import supabase from "../../supabase/client";
 import { Toaster, toast } from "sonner"; 
 import styles from "./Game.module.css";
+import Chat from "./components/Chat";
 
 
 export default function Game() {
@@ -112,6 +113,11 @@ export default function Game() {
                             <button className={styles.button} onClick={() => addFav(game)}>Add to Favorites</button>
                         )}
                     </>
+                )}
+
+                {session && (
+                    <Chat game={game} session={session}/>
+                    
                 )}
             </div>
             

@@ -49,7 +49,8 @@ export default function BasicTabs() {
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Profile" {...a11yProps(0)} sx={{ color : "white"}} />
           <Tab label="Favorites" {...a11yProps(1)} sx={{ color : "white"}}/>
-          <Tab label="Reviews" {...a11yProps(2)} sx={{ color : "white"}} />
+          
+          
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
