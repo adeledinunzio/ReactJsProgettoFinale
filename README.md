@@ -21,7 +21,7 @@ UTENTI NON AUTENTICATI:
 Navigare tra tutti i giochi presenti nella piattaforma,
 Cercare giochi per titolo,
 Filtrare giochi per genere o piattaforma,
-Visualizzare informazioni dettagliate su gioch specifici,
+Visualizzare informazioni dettagliate su giochi specifici,
 Registrarsi con email e password.
 UTENTI AUTENTICATI:
 Visualizzare e aggiornare le informazioni del proprio profilo,
