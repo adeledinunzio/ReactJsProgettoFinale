@@ -31,5 +31,6 @@ Chattare con altri utenti nella chat in tempo reale.
 SESSION CONTEXT - Gestisce lo stato di autenticazione dell'utente.
 FAVORITE CONTEXT - Gestisce la lista dei giochi preferiti dell'utente.
 # DEPLOYMENT
+https://react-js-progetto-finale.vercel.app/
 
 
