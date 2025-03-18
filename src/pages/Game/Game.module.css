@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 2fr 2fr; /* Due colonne: 1/3 immagine, 2/3 dettagli */
+    grid-template-columns: 2fr 2fr; 
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
