@@ -80,12 +80,7 @@ const Platform = () => {
                 <div className={styles.heading}>
                     <h1>Games for {platform}</h1>
                     
-                    <input
-                        type="search"
-                        name="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    />
+                 
                 </div>
 
                 <div className={styles.game_wrapper}>
